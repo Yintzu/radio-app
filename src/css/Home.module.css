@@ -1,0 +1,32 @@
+.home *{
+    text-align: center;
+    color: white;
+}
+
+.gradient{
+    background: linear-gradient(90deg, rgba(77,255,253,1) 0%, rgba(53,101,255,1) 50%, rgba(255,75,239,1) 100%);
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 2rem;
+}
+
+.content{
+    background: rgb(36, 36, 36);
+    border-radius: 10px;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.desc{
+    margin: 0;
+}
+
+.button{
+    color: rgb(36, 36, 36);
+    height: 2rem;
+    width: 6rem;
+    border-radius: 100vh;
+    font-weight: bold;
+    margin: 0 1rem 2rem 1rem;
+    cursor: pointer;
+}

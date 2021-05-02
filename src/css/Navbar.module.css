@@ -1,0 +1,161 @@
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(2, 0, 2);
+}
+
+.border{
+    width: 100%;
+    height: 2vh;
+    background: linear-gradient(90deg, rgba(77,255,253,1) 0%, rgba(53,101,255,1) 50%, rgba(255,75,239,1) 100%);
+}
+
+.navlink{
+    margin: 1rem 0 1rem 0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navlink:hover{
+    color: yellow;
+}
+
+.flexer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.logoImg{
+    display: none;
+    height: 10vh;
+}
+
+.logoText{
+    font-family: 'Zen Dots', cursive;
+    color: white!important;
+    margin: 0 0 0 1rem;
+    font-size: calc(1.2rem + 6vw);
+}
+
+.loginButton{
+    border: white solid 2px;
+    border-radius: 10px;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    margin: 1rem auto 0 auto;
+    color: white;
+    font-weight: bold;
+}
+
+.logoutButton{
+    border: rgb(255, 145, 145) solid 2px;
+    border-radius: 10px;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    margin: 1rem auto 0 auto;
+    color: rgb(255, 145, 145);
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hamburger{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+}
+
+.hbar1, .hbar2, .hbar3{
+    pointer-events: none;
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hbar1{
+    top: 20%;
+}
+.hbar2{
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.hbar3{
+    bottom: 20%;
+}
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.966);
+    transition: right 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.open{
+    right: 0;
+}
+
+@media only screen and (min-width: 450px){
+    .logoImg{
+        display: initial;
+    }
+    .logoText{
+        margin: 0;
+        font-size: 2.8rem;
+    }
+
+}
+
+@media only screen and (min-width: 760px){
+    .links{
+        display: initial;
+    }
+    .hamburger{
+        display: none;
+    }
+    .menu{
+        display: initial;
+        position: initial;
+        background: initial;
+        height: initial;
+        width: initial;
+        overflow-x: initial;
+    }
+    .navlink{
+        margin: 0 0 0 1rem
+    }
+    .loginButton, .logoutButton{
+        margin: 0 1rem;
+    }
+}
+@media only screen and (min-width: 1050px){
+    .loginButton, .logoutButton{
+        margin: 0 0 0 1rem;
+    }
+}
